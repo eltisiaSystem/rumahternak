@@ -15,6 +15,9 @@ class CreateLivestocksTable extends Migration
     {
         Schema::create('livestocks', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('rfid');
+            $table->string('initial');
+            
             $table->timestamps();
         });
     }
